@@ -161,6 +161,7 @@ The notebook `Version/code-offensive-v6.ipynb` implements a research pipeline ev
 
 ```text
 .
+├── project_baseline.ipynb                    # Project baseline notebook for Assignment Part B (Paper review, baseline models, exhibits E, F, G)
 ├── basilineversion.ipynb                     # Main notebook containing EDA, audits, preprocessing & ML baselines
 ├── Version/
 │   ├── code-offensive-v6.ipynb               # MuRIL + XLM-RoBERTa Hybrid & Ensembles with 5-Fold User-Grouped CV
@@ -190,14 +191,21 @@ pip install pandas numpy scikit-learn matplotlib torch transformers jupyter
 
 ### Execution
 
-#### 1. Baseline Pipeline
+#### 1. Project Baseline Pipeline (Assignment Part B)
+Launch the baseline notebook containing Exhibit E, Exhibit F, Model Card, and baseline experiments:
+
+```bash
+jupyter notebook project_baseline.ipynb
+```
+
+#### 2. EDA & Detailed ML Baseline Pipeline
 Launch the baseline notebook for EDA, data quality audits, preprocessing, and TF-IDF / LinearSVC models:
 
 ```bash
 jupyter notebook basilineversion.ipynb
 ```
 
-#### 2. Transformer & Hybrid Pipeline (v6)
+#### 3. Transformer & Hybrid Pipeline (v6)
 Launch the Version 6 notebook for MuRIL + XLM-RoBERTa feature extraction, 5-fold user-grouped cross-validation, hybrid MLP training, and probability ensembling:
 
 ```bash
